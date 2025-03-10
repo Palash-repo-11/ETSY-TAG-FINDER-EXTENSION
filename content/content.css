@@ -1,0 +1,323 @@
+/* TagDiv */
+#ETSY-tagbox {
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    z-index: 454;
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* navbar details */
+#ETSY-navbar {
+    height: 60px;
+    width: 100%;
+    background-color: #393939;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+}
+
+.ETSY-navspan {
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.ETSY-navspan:first-child {
+    margin-left: 10px;
+}
+
+#ETSY-navdiv {
+    padding: 2px 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ETSY-divspan {
+    background-color: white;
+    margin: 0px 5px;
+    padding: 6px 38px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.ETSY-ds3 {
+    margin-left: 20px;
+    margin-right: 10px;
+    background-color: #393939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ETSY-closeIcon {
+    height: 24px;
+    width: 24px;
+
+}
+
+/* header menu*/
+#ETSY-headmenu {
+    height: 60px;
+    width: 100%;
+    font-size: larger;
+    font-weight: bolder;
+    padding-right: 10px;
+    background-color: #F6F6F6;
+}
+
+/* contentbox */
+#ETSY-contentbox {
+    height: 300px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.ETSY-menu {
+    height: 60px;
+    width: 100%;
+    padding: auto;
+    display: flex;
+    justify-content: start;
+    /* justify-content: space-evenly; */
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.ETSY-s {
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ETSY-span1 {
+    width: 5%;
+}
+
+.ETSY-span2 {
+    width: 5%;
+}
+
+.ETSY-span3 {
+    width: 35%;
+    display: flex;
+    justify-content: start;
+}
+
+.ETSY-span4,
+.ETSY-span5,
+.ETSY-span6,
+.ETSY-span7,
+.ETSY-span8 {
+    width: 8%;
+}
+
+.ETSY-span5,
+.ETSY-span6,
+.ETSY-span7,
+.ETSY-span8 {
+    display: none;
+}
+
+.ETSY-span9 {
+    width: 15%;
+    display: none;
+}
+
+.ETSY-tag {
+    color: #3F6CEB;
+}
+
+.ETSY-mod {
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.ETSY-Noresult {
+    border: none;
+    background-color: #c5cbdc;
+    padding-top: 15px;
+}
+
+#ETSY-elementnotfound {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* Change the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    /* Change the color of the scrollbar thumb */
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Change the color of the scrollbar track */
+}
+
+#ETSY-loadDiv {
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    z-index: 450;
+    position: fixed;
+    bottom: 0;
+}
+
+.ETSY-tagMenu {
+    line-height: 17px;
+    font-size: 14px;
+}
+
+#ETSY-loadernav {
+    height: 60px;
+    width: 100%;
+    background-color: #393939;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px;
+}
+
+#ETSY-loaderDiv {
+    height: 340px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0px 10px;
+
+}
+
+.ETSY-loaderCon {
+    height: 60px;
+    width: 100%;
+    padding: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.ETSY-loadLine {
+    height: 20px;
+    border-radius: 5px;
+    background-color: #c7c5c5;
+    animation: loading 1s infinite;
+}
+
+.ETSY-load:nth-child(1) {
+    width: 5%;
+}
+
+.ETSY-load:nth-child(2) {
+    width: 5%;
+
+}
+
+.ETSY-load:nth-child(3) {
+    width: 35%;
+
+}
+
+.ETSY-load:nth-child(4) {
+    width: 8%;
+}
+
+.ETSY-load:nth-child(5) {
+    width: 8%;
+
+}
+
+.ETSY-load:nth-child(6) {
+    width: 8%;
+
+}
+
+.ETSY-load:nth-child(7) {
+    width: 8%;
+
+}
+
+.ETSY-load:nth-child(9) {
+    width: 15%;
+
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+#ETSY-refDiv {
+    position: fixed;
+    top: 30%;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    z-index: 768;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* background-color: #3F6CEB;  */
+}
+
+#ETSY-refDiv:hover {
+    cursor: pointer;
+}
+
+#ETSY-refimg {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    mix-blend-mode: multiply;
+}
+/* massage box css */
+/* #ETSY-MessageDiv {
+    height:60%;
+    width: 80%;
+    background-color:gray;
+    position: absolute;
+    z-index:940;
+    border: #3F6CEB 4px solid;
+}
+
+#ETSY-MessageSpan {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: crimson;
+} */
